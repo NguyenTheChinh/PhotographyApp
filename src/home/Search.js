@@ -8,8 +8,8 @@ import {
     TextInput, ImageBackground
 } from "react-native";
 
-export default class Home extends Component<Props>{
+export default class Search extends Component<Props>{
     render(){
-        return(<View/>)
+        return(<View><Text>Search</Text></View>)
     }
 }

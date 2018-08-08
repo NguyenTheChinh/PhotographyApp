@@ -8,8 +8,8 @@ import {
     TextInput, ImageBackground
 } from "react-native";
 
-export default class Home extends Component<Props>{
+export default class NewFeed extends Component<Props>{
     render(){
-        return(<View/>)
+        return(<View><Text>NewFeed</Text></View>)
     }
 }

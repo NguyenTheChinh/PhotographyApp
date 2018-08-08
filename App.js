@@ -34,13 +34,14 @@ const App = createStackNavigator({
             // },
             // headerBackTitleVisible: false,
             headerTransparent: true,
-            headerTintColor: "#fff"
+            headerTintColor: "#fff",
         }
     },
-    HomeScreen:{
+    HomeScreen: {
         screen: Home,
-        navigationOptions:{
-            headerMode: "none"
+        navigationOptions: {
+            header:null
+            // headerMode:"none"
         }
     }
 }, {mode: "modal"});

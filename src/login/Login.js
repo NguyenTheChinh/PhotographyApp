@@ -12,6 +12,10 @@ import {Header} from "react-navigation";
 
 export default class Login extends Component<Props> {
 
+    _onPressSignIn(){
+        this.props.navigation.navigate("HomeScreen");
+    }
+
     _onPressRegister() {
         this.props.navigation.navigate("RegisterScreen");
     }
@@ -42,6 +46,7 @@ export default class Login extends Component<Props> {
                         <TouchableHighlight
                             style={style.signin_button}
                             underlayColor="#049fd8"
+                            onPress={this._onPressSignIn.bind(this)}
                         >
                             <Text style={style.signin_text}>Sign In</Text>
                         </TouchableHighlight>
